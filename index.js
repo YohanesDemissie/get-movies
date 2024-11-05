@@ -9,7 +9,7 @@ app.appendChild(container);
 var request = new XMLHttpRequest();
 // Step 1: Initialize API call with new request
 
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+request.open('GET', 'https://ghibliapi.vercel.app/films', true);
 //Step 2: initilialize crud route (get in this example)
 
 request.onload = function() {
@@ -31,7 +31,7 @@ request.onload = function() {
       card.appendChild(p);
     })
   } else {
-    const errorMessage = document.createElement('marquee');
+    const errorMessage = document.createElement('h1');
     errorMessage.textContent = 'YOU DUN MESSED UP FAM';
     app.appendChild(errorMessage);
   }
