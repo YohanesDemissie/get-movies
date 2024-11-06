@@ -51,9 +51,22 @@ p {
   transform: translate3D(0, -2px, 0);
 }
 
+@media screen and (min-width: 350px) {
+  .card {
+    flex: 1 1 calc(100% - 2rem);
+  }
+  img {
+    width: 75%
+  }
+
+}
+
 @media screen and (min-width: 600px) {
   .card {
     flex: 1 1 calc(50% - 2rem);
+  }
+  img {
+    width: 75%;
   }
 }
 
@@ -75,3 +88,9 @@ p {
   background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
 }
 
+/* NEW FIXEES */
+/* .card {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+} */
